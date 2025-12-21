@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Workbook>
+  <Sheet name="Sheet1">
+    <Row index="1">
+      <Cell col="A">Name</Cell>
+      <Cell col="B">Age</Cell>
+    </Row>
+    <Row index="2">
+      <Cell col="A">Alice</Cell>
+      <Cell col="B">30</Cell>
+    </Row>
+    <Row index="3">
+      <Cell col="A">Bob</Cell>
+      <Cell col="B">25</Cell>
+    </Row>
+  </Sheet>
+</Workbook>
