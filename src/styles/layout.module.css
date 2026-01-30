@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+/* 2K and above */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2240px;
+    padding: 0 96px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+}
