@@ -1,0 +1,159 @@
+/* ---------------- HEADER (из плагина) ---------------- */
+.header {
+  width: 1920px;
+  padding: 12px 64px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* фикс-центрирование на широких экранах */
+  top: 16px;
+  position: fixed;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 2;
+}
+
+.headerLeft {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* Variant6 */
+.headerNav {
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navPill {
+  height: 46px;
+  padding: 16px;
+  background: white;
+  opacity: 0.4;
+  border-radius: 33px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #222222;
+
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Активная страница */
+.navPillActive {
+  opacity: 1;
+}
+
+/* Hover как у кнопок */
+.navPill:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+
+.headerRight {
+  width: 300px;
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerBtn {
+  height: 46px;
+  padding: 16px;
+  background: white;
+  border-radius: 33px;
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #222222;
+}
+
+.plusIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.plusLight {
+  display: none;
+}
+
+.headerBtn:hover {
+  background: radial-gradient(
+    ellipse 100% 900% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+  color: white;
+
+  box-shadow: -5px -5px 12px rgba(20, 196, 237, 0.2),
+              3px 5px 12px rgba(99, 74, 245, 0.3);
+
+  transform: translateY(-2px);
+}
+
+/* Меняем иконки местами */
+.headerBtn:hover .plusDark {
+  display: none;
+}
+
+.headerBtn:hover .plusLight {
+  display: block;
+}
+
+.headerBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ---------------- HERO (из плагина) ---------------- */
+.heroHighlight {
+  width: 320px;
+  height: 57px;
+  left: 238px;
+  top: 927px;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 157, 0, 0.8) 0%,
+    rgba(99, 74, 245, 0) 90%
+  );
+}
+
+/* media должны быть СНАРУЖИ селекторов */
+@media (max-width: 1600px) {
+  .header {
+    transform: translateX(-50%) scale(0.75);
+    transform-origin: top center;
+  }
+}

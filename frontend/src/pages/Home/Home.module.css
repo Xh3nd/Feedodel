@@ -1,0 +1,1301 @@
+.page {
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+
+  background: #f2f2f2;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+
+/* HERO IMG — под всем контентом */
+.heroImg {
+  position: absolute;
+  left: 32px;
+  top: 16px;              /* ключевое: стартует там же, где “живёт” хедер */
+  width: 1856px;
+  height: 980px;          /* увеличили, чтобы хватило до низа hero-зоны */
+  border-radius: 28px;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+}
+
+/* ---------------- HERO (из плагина) ---------------- */
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 1180px; /* ← ВАЖНО: это нижняя точка hero + инфокарты */
+  margin-bottom: 60px;
+}
+
+.heroHighlight {
+  width: 320px;
+  height: 57px;
+  left: 238px;
+  top: 927px;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 157, 0, 0.8) 0%,
+    rgba(99, 74, 245, 0) 90%
+  );
+  border-radius: 82px;
+  z-index: 1;
+}
+
+.heroTitle {
+  width: 700px;
+  left: 250px;
+  top: 865px;
+  position: absolute;
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+  word-wrap: break-word;
+  z-index: 1;
+}
+
+.heroRow {
+  width: 712px;
+  padding-left: 12px;
+  padding-right: 12px;
+  left: 238px;
+  top: 1005px;
+  position: absolute;
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  z-index: 1;
+}
+
+.heroDesc {
+  width: 456px;
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+/* button_preview_default */
+.primaryBtn {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(
+    ellipse 100% 900% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  box-shadow: -5px -5px 12px rgba(20, 196, 237, 0.2),
+              3px 5px 12px rgba(99, 74, 245, 0.3);
+
+  transition: all 0.2s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: -7px -7px 16px rgba(20, 196, 237, 0.25),
+              5px 7px 16px rgba(99, 74, 245, 0.35);
+}
+
+.primaryBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* ---------------- info cards (из плагина) ---------------- */
+.infoCard2 {
+  width: 346px;
+  min-width: 135px;
+  padding: 16px;
+  left: 1336px;
+  top: 956px;
+  position: absolute;
+
+  background: white;
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  outline: 1px #f5f5f5 solid;
+  outline-offset: -1px;
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+
+  z-index: 1;
+}
+
+.infoCard1 {
+  min-width: 135px;
+  padding: 16px;
+  left: 1092px;
+  top: 956px;
+  position: absolute;
+
+  background: white;
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  outline: 1px #f5f5f5 solid;
+  outline-offset: -1px;
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+
+  z-index: 1;
+}
+
+.infoText {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.infoTitle {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.infoSub {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.infoArrowBtn {
+  height: 46px;
+  padding: 16px;
+  border-radius: 56px;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrowIcon {
+  width: 20px; /* если у тебя “слишком маленькая” — увеличим тут */
+  height: 20px;
+  display: block;
+}
+
+/* ---------------- WHY TITLE (из плагина) ---------------- */
+.whySection {
+  position: relative;
+  width: 100%;
+  height: 507px; /* строго по макету */
+  margin-bottom: 60px;
+}
+
+.whyTitle {
+  position: absolute;
+  width: 1444px;
+  left: 238px;
+  top: 0px;
+
+  text-align: center;
+  color: #000000;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.48px;
+
+  z-index: 2;
+}
+
+.features {
+  position: absolute;
+  left: 238px;
+  top: 162px;
+  width: 1444px;
+  height: 345px;
+}
+
+/* Большие карточки */
+.featureCardLarge {
+  position: absolute;
+  width: 468px;
+  height: 345px;
+  padding: 32px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  text-align: center;
+}
+
+/* Левая */
+.featureCardLarge:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+/* Центральная */
+.featureCardLarge:nth-child(2) {
+  left: 488px;
+  top: 0;
+}
+
+/* Маленькие карточки справа */
+.featureCardSmall {
+  position: absolute;
+  width: 468px;
+  height: 162.5px;
+  padding: 43.76px 65.65px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Верхняя правая */
+.featureCardSmall:nth-child(3) {
+  left: 976px;
+  top: 0;
+}
+
+/* Нижняя правая */
+.featureCardSmall:nth-child(4) {
+  left: 976px;
+  top: 182.5px;
+}
+
+.featureText {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #787878;
+}
+
+/* Иконки-заглушки (как цветные блоки из плагина) */
+.featureIcon {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.featureIconSmall {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* ---------------- STEPS SECTION ---------------- */
+.stepsSectionWrapper {
+  position: relative;
+  width: 100%;
+  height: 630px; /* строго по макету */
+  margin-bottom: 100px;
+}
+
+.stepsSection {
+  position: absolute;
+  left: 238px;
+  top: 0px;
+  width: 1444px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.stepsHeader {
+  width: 1444px;
+  box-sizing: border-box;
+}
+
+/* Заголовок одной строкой: <span>3 шага</span> до идеального фида */
+.stepsHeader {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.48px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.stepsTitleAccent {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.48px;
+
+  background: linear-gradient(94.19deg, #14C4ED 0%, #634AF5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.stepsTitleMain {
+  color: #222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  line-height: 58px;
+}
+
+
+.stepsSubtitle {
+  margin-top: 10px;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #787878;
+}
+
+/* CONTENT (cards + video) */
+.stepsContent {
+  margin-top: 40px;
+  width: 1444px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* LEFT COLUMN */
+.stepsList {
+  width: 590px;
+  flex: 0 0 590px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.stepCard {
+  box-sizing: border-box;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+  padding: 16px 32px;
+  border-radius: 20px;
+
+  background: #ffffff;
+  border: 1px solid #d9d9d9; /* по умолчанию НЕ активная */
+}
+
+.stepCardActive {
+  border: none;
+  box-shadow: 3px 5px 12px rgba(99, 74, 245, 0.3),
+    -5px -5px 12px rgba(20, 196, 237, 0.2);
+}
+
+.stepIcon {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.stepText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stepTitle {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.stepDesc {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #787878;
+}
+
+/* RIGHT COLUMN */
+.stepsVideoBlock {
+  width: 590px;
+  flex: 0 0 590px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  box-sizing: border-box;
+}
+
+.stepsVideoImg {
+  width: 560px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.stepsVideoText {
+  width: 590px;
+  text-align: center;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  color: #787878;
+}
+
+.stepsOr {
+  position: absolute;
+  width: 119.76px;
+  height: 32px;
+
+  left: calc(50% - 119.76px / 2 - 0.12px);
+  top: 432px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.stepsOrLine {
+  width: 21.88px;
+  height: 1.37px;
+  background: #d9d9d9;
+  display: block;
+}
+
+.stepsOrText {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #b9b9b9;
+}
+
+/* ===== CTA SECTION ===== */
+.ctaSectionWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px; /* достаточно под текст + кнопку */
+  margin-bottom: 60px;
+}
+
+.ctaSection {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 493px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  z-index: 2;
+}
+
+.ctaText {
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.primaryBtnLarge {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+
+  background: radial-gradient(ellipse 141% 896% at 0% 0%, #634AF5 0%, #14C4ED 100%);
+  box-shadow: -5px -5px 12px rgba(20, 196, 237, 0.2),
+               3px 5px 12px rgba(99, 74, 245, 0.3);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primaryBtnLarge:hover {
+  transform: translateY(-2px);
+  box-shadow: -8px -8px 16px rgba(20, 196, 237, 0.25),
+               5px 8px 16px rgba(99, 74, 245, 0.35);
+}
+
+.primaryBtnLarge:active {
+  transform: translateY(1px);
+  box-shadow: -2px -2px 6px rgba(20, 196, 237, 0.2),
+               2px 3px 6px rgba(99, 74, 245, 0.3);
+}
+
+/* ===== PLATFORM SECTION ===== */
+.platformSectionWrapper {
+  position: relative;
+  width: 100%;
+  height: 1160px;
+}
+
+.platformSection {
+  position: absolute;
+  left: 0;
+  top: 0px; 
+  width: 1920px;
+
+  padding-bottom: 144px;
+
+  background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%), #ffffff;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 168px;
+
+  z-index: 2;
+}
+
+.platformTopGlow {
+  position: absolute;
+  width: 361px;
+  height: 56px;
+  left: 650px;
+  top: 60px;
+
+  background: linear-gradient(90deg, rgba(255, 157, 0, 0.8) 0%, rgba(99, 74, 245, 0) 90%);
+  border-radius: 31px;
+  z-index: 0;
+}
+
+.platformIntro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 0;
+  padding-top: 0;
+  z-index: 2;
+}
+
+.platformTitle {
+  width: 1200px;
+  height: 116px;
+
+  margin: 0;
+  text-align: center;
+
+  color: #222222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.platformSubtitle {
+  width: 1200px;
+  height: 64px;
+
+  margin: 0;
+  text-align: center;
+
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.platformContent {
+  width: 1444px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.platformGroup {
+  width: 1444px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.platformGroupHeader {
+  width: 468px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.platformGroupHeaderWide {
+  width: 1444px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.platformGroupTitle {
+  flex: 1 1 0;
+
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.platformCardsRow {
+  width: 100%;
+  max-width: 1444px;
+
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+/* default card */
+.platformCardDefault {
+  width: 468px;
+  min-width: 135px;
+  min-height: 220px;
+  padding: 24px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+.platformCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.platformCardTitle {
+  color: #222222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.platformCardDesc {
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* not active button */
+.platformCardBtn {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+
+  background: #ffffff;
+  border: none;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+
+  cursor: pointer;
+
+  color: #222222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.platformCardBtn:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.platformCardBtn:active {
+  transform: translateY(0px);
+}
+
+/* placeholders */
+.platformCardPlaceholder {
+  width: 468px;
+  height: 220px;
+  min-width: 135px;
+  min-height: 220px;
+
+  padding: 24px;
+  background: #ededed;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+}
+
+/* ===== QUESTION / FAQ SECTION ===== */
+.qaSectionWrapper {
+  position: relative;
+  width: 100%;
+  height: 791px; /* 4851 - 4060 */
+}
+
+.qaSection {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 1920px;
+
+  z-index: 2;
+}
+
+/* left main title */
+.qaTitle {
+  position: absolute;
+  width: 590px;
+  left: 238px;
+  top: 0;
+
+  margin: 0;
+  text-align: center;
+
+  color: #222222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+/* right title + link */
+.qaRightTitle {
+  position: absolute;
+  width: 712px;
+  left: 970px;
+  top: 21px;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.qaRightTitleMain {
+  color: #787878;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.qaRightLink {
+  color: #14c4ed;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: underline;
+}
+
+/* ===== FORM (left) ===== */
+.qaForm {
+  position: absolute;
+  width: 590px;
+  left: 238px;
+  top: 82px;
+
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qaField {
+  width: 590px;
+  display: block;
+}
+
+/* visually hidden label */
+.qaSrOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* shared controls */
+.qaControl {
+  width: 590px;
+  height: 72px;
+
+  padding: 0 24px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  border: 1px solid #d9d9d9;
+  outline: none;
+
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #222222;
+
+  box-sizing: border-box;
+}
+
+.qaControl::placeholder {
+  color: #e6e6e6;
+}
+
+/* textarea */
+.qaTextareaControl {
+  height: 200px;
+  padding-top: 22px;
+  resize: none;
+}
+
+/* focus (аккуратно, без “синего” если хочешь — можно убрать) */
+.qaControl:focus {
+  border-color: #cfcfcf;
+}
+
+/* consent + button */
+.qaConsent {
+  width: 590px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  margin-top: 20px;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  box-sizing: border-box;
+}
+
+.qaConsentRow {
+  width: 100%;
+  display: inline-flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* native checkbox hidden but accessible */
+.qaCheckboxNative {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.qaCheckboxVisual {
+  width: 27px;
+  height: 27px;
+
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+/* checked state */
+.qaCheckboxNative:checked + .qaCheckboxVisual {
+  border-color: #bdbdbd;
+  background: #ffffff;
+}
+
+/* draw check mark (простая галка, можно заменить на svg если надо) */
+.qaCheckboxNative:checked + .qaCheckboxVisual::after {
+  content: "";
+  position: relative;
+  display: block;
+
+  width: 14px;
+  height: 8px;
+
+  left: 6px;
+  top: 8px;
+
+  border-left: 2px solid #787878;
+  border-bottom: 2px solid #787878;
+  transform: rotate(-45deg);
+}
+
+.qaConsentText {
+  flex: 1 1 0;
+
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.qaConsentLink {
+  text-decoration: underline;
+}
+
+/* send button */
+.qaSendBtn {
+  height: 52px;
+  padding: 0 56px; /* убрали вертикальный padding */
+
+  border-radius: 56px;
+  border: none;
+
+  background: #222222;
+  opacity: 0.4;
+
+  color: #ffffff;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: inline-flex;          /* ВАЖНО */
+  align-items: center;           /* центр по вертикали */
+  justify-content: center;       /* центр по горизонтали */
+
+  cursor: not-allowed;
+}
+
+
+.qaSendBtnEnabled {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.qaSendBtnEnabled:hover {
+  filter: brightness(1.05);
+}
+
+.qaSendBtnEnabled:active {
+  transform: translateY(1px);
+}
+
+/* ===== FAQ (right) ===== */
+.faqList {
+  position: absolute;
+  width: 712px;
+  left: 970px;
+  top: 106px;
+
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItemOpen {
+  width: 712px;
+  min-height: 264px;
+
+  padding-left: 24px;
+  padding-right: 12px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.faqItem {
+  width: 712px;
+  height: 72px;
+
+  padding-left: 24px;
+  padding-right: 12px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.faqHeader {
+  height: 72px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faqQuestion {
+  color: #222222;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.faqToggle {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.faqToggleIcon {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.faqToggle:hover {
+  filter: brightness(1.05);
+}
+
+.faqToggle:active {
+  transform: translateY(1px);
+}
+
+.faqBody {
+  padding-bottom: 18px;
+}
+
+.faqAnswer {
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  position: relative;
+  left: 0;
+  top: 4851px; /* как в html-плагине; если ты уже смещал секции — подгони */
+  width: 1920px;
+
+  padding: 72px 0;
+  background: #222222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  z-index: 2;
+}
+
+.footerInner {
+  width: 1444px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footerLeft {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.footerLogo {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.footerTagline {
+  padding-left: 12px;
+
+  color: #f4f4f4;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23.87px;
+}
+
+.footerRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.footerTitle {
+  width: 468px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #ffffff;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.footerCols {
+  width: 468px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerCol {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  color: #f4f4f4;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  width: 1444px;
+  padding-left: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footerPolicy {
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: underline;
+}
+
+/* ===== Responsive (первый проход) =====
+   Сейчас вёрстка пиксель-перфект под 1920px.
+   Чтобы начать с 2K -> FHD -> Laptop без полного переписывания позиционирования,
+   на Laptop временно масштабируем макет.
+   Дальше можно будет заменить scale на реальные fluid/grid размеры. */
+
+@media (min-width: 1921px) {
+  .page {
+    /* центрируем макет на 2K+ */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .page {
+    /* Laptop ~1440px */
+    transform: scale(0.75);
+  }
+}

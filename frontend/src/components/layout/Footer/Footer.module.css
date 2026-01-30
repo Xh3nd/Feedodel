@@ -1,0 +1,136 @@
+/* ===== FOOTER ===== */
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 72px 0;
+  background: #222222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  z-index: 2;
+}
+
+
+
+.footerInner {
+  width: 1444px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footerLeft {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.footerLogo {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.footerTagline {
+  padding-left: 12px;
+
+  color: #f4f4f4;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23.87px;
+}
+
+.footerRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.footerTitle {
+  width: 468px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #ffffff;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.footerCols {
+  width: 468px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerCol {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  color: #f4f4f4;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  width: 1444px;
+  padding-left: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footerPolicy {
+  color: #787878;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: underline;
+}
+
+/* ===== Responsive (первый проход) =====
+   Сейчас вёрстка пиксель-перфект под 1920px.
+   Чтобы начать с 2K -> FHD -> Laptop без полного переписывания позиционирования,
+   на Laptop временно масштабируем макет.
+   Дальше можно будет заменить scale на реальные fluid/grid размеры. */
+
+@media (min-width: 1921px) {
+  .page {
+    /* центрируем макет на 2K+ */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .page {
+    /* Laptop ~1440px */
+    transform: scale(0.75);
+  }
+}

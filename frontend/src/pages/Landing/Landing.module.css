@@ -1,0 +1,50 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  padding: 120px 32px 0;
+}
+
+.heroImg {
+  width: 100%;
+  border-radius: 32px;
+  display: block;
+}
+
+.heroContent {
+  position: absolute;
+  top: 260px;
+  left: 96px;
+  max-width: 700px;
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  margin-bottom: 20px;
+}
+
+.heroContent span {
+  background: linear-gradient(90deg, rgba(255,157,0,0.8), rgba(99,74,245,0));
+  padding: 4px 12px;
+  border-radius: 82px;
+}
+
+.heroContent p {
+  font-size: 24px;
+  color: #787878;
+  margin-bottom: 24px;
+}
+
+.cta {
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: radial-gradient(circle at left, #634AF5, #14C4ED);
+}
