@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 import logoLight from "../../../assets/icons/logo_light.svg";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>

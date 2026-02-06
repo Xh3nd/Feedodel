@@ -1299,3 +1299,42 @@
     transform: scale(0.75);
   }
 }
+
+.upBtn {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 999;
+
+  width: 128px;
+  height: 128px;
+
+  border: 0;
+  cursor: pointer;
+
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10.5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.upBtnShow {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* увеличить иконку */
+.upBtnIcon {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
