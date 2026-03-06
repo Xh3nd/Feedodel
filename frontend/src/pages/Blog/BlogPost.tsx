@@ -1,14 +1,19 @@
+import { Navigate, useParams } from "react-router-dom";
 import { Header, Footer } from "../../components/layout";
-import styles from "./Blog.module.css";
-import { useNavigate } from "react-router-dom";
+import styles from "./BlogPost.module.css";
 
 import headerTopImg from "../../assets/images/header-top_img.png";
 import heroArrowIcon from "../../assets/icons/arrow_hero-button_icon.svg";
 import homeIcon from "../../assets/icons/home_icon.svg";
 import { BLOG_POSTS } from "./blogData";
 
-export default function Blog() {
-  const navigate = useNavigate();
+export default function BlogPost() {
+  const { postId } = useParams();
+  const post = BLOG_POSTS.find((item) => String(item.id) === postId);
+
+  if (!post) {
+    return <Navigate to="/blog" replace />;
+  }
 
   return (
     <div className={styles.page}>
@@ -37,40 +42,36 @@ export default function Blog() {
 
         <section className={styles.content}>
           <div className={styles.headingBlock}>
-            <h1 className={styles.heading}>Блог фидоделов</h1>
+            <h1 className={styles.heading}>{post.fullTitle}</h1>
             <div className={styles.breadcrumbs}>
               <img className={styles.breadcrumbHomeIcon} src={homeIcon} alt="" />
               <span>/</span>
               <span>Blog</span>
+              <span>/</span>
+              <span>{post.fullTitle}</span>
             </div>
           </div>
 
-          <section className={styles.cardsGrid}>
-            {BLOG_POSTS.map((post) => (
-              <article key={post.id} className={styles.postCard}>
-                <div className={styles.cardImageStub} />
+          <section className={styles.articleLayout}>
+            <aside className={styles.mediaColumn}>
+              <div className={styles.mainImageStub} />
+              <div className={styles.previewRow}>
+                <div className={styles.previewItem} />
+                <div className={styles.previewItem} />
+                <div className={styles.previewItem} />
+              </div>
+            </aside>
 
-                <div className={styles.cardHead}>
-                  <div className={styles.cardTitle}>{post.title}</div>
-                  <div className={styles.cardDate}>{post.date}</div>
-                </div>
-
-                <div className={styles.cardBody}>
-                  <div className={styles.cardSummaryTitle}>{post.summaryTitle}</div>
-                  <div className={styles.cardSummary}>{post.summary}</div>
-                </div>
-
-                <div className={styles.cardActions}>
-                  <button
-                    className={styles.readBtn}
-                    type="button"
-                    onClick={() => navigate(`/blog/${post.id}`)}
-                  >
-                    Читать
-                  </button>
-                </div>
-              </article>
-            ))}
+            <article className={styles.textColumn}>
+              <div className={styles.textTitle}>{post.fullTextTitle}</div>
+              <div className={styles.textBody}>
+                {post.fullText.split("\n").map((line, idx) => (
+                  <p key={idx} className={styles.textParagraph}>
+                    {line}
+                  </p>
+                ))}
+              </div>
+            </article>
           </section>
         </section>
       </main>

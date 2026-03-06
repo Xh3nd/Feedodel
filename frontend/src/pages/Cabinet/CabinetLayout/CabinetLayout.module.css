@@ -1,0 +1,29 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%),
+    #f2f2f2;
+}
+
+.pageInner {
+  /* header fixed: top 16px + высота примерно 70-80px.
+     подгони число, если шапка перекрывает контент */
+  padding-top: 120px;
+}
+
+.inner {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 20px;
+
+  padding-right: 238px;
+}
+
+.content {
+  flex: 1;
+  padding-top: 64px;
+  padding-bottom: 168px;
+  padding-left: 122px;
+}

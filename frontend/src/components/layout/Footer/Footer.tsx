@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 import logoLight from "../../../assets/icons/logo_light.svg";
 
@@ -36,7 +37,9 @@ export default function Footer() {
       </div>
 
       <div className={styles.footerBottom}>
-        <a className={styles.footerPolicy} href="#">Privacy policy</a>
+        <Link className={styles.footerPolicy} to="/privacy-policy">
+          Privacy policy
+        </Link>
       </div>
     </footer>
   );

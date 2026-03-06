@@ -1,0 +1,524 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%),
+    #f2f2f2;
+}
+
+.body {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding-top: 90px; /* header fixed */
+  padding-right: 238px;
+}
+
+/* ---------------- LEFT (SIDEBAR) ---------------- */
+.sidebar {
+  width: 540px;
+  align-self: stretch;
+  padding: 64px 64px 216px 64px;
+  border-right: 1px solid #d9d9d9;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.serviceSelect {
+  width: 100%;
+  padding: 12px 16px 12px 12px;
+  background: white;
+  border-radius: 20px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceText {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.serviceChevron {
+  width: 18px;
+  height: 10px;
+  border-radius: 2px;
+  background: #787878;
+  opacity: 0.85;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stepsHeader {
+  padding: 0 12px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepsTitle,
+.stepsCount {
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.72px;
+}
+
+.stepCardDone,
+.stepCardActive {
+  padding: 12px 16px;
+  background: white;
+  border-radius: 20px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepCardRow {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepCardRowTitle {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.stepDoneMark {
+  width: 22px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepDoneMark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.stepCardTitle {
+  color: #222222;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.stepCardText {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.stepCardDisabled {
+  padding: 12px 32px 12px 16px;
+  background: white;
+  border-radius: 20px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+  opacity: 0.4;
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.sidebarBottom {
+  padding: 0 12px;
+  display: inline-flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.btnBack {
+  height: 52px;
+  padding: 0 32px;
+  background: #222222;
+  border-radius: 56px;
+  border: 0;
+  cursor: pointer;
+
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnNext {
+  flex: 1 1 0;
+  height: 52px;
+  padding: 0 56px;
+
+  background: radial-gradient(
+    ellipse 141.42% 896.16% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+  border-radius: 56px;
+  border: 0;
+  cursor: pointer;
+
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnDisabled {
+  opacity: 0.4;
+  background: #222222;
+  cursor: not-allowed;
+}
+
+/* ---------------- RIGHT (CONTENT) ---------------- */
+.content {
+  flex: 1 1 0;
+  padding-top: 168px;
+  padding-bottom: 168px;
+  padding-left: 122px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.dropArea {
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+/* title top (only idle/drag/wrong) */
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.centerTitle {
+  color: #222222;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.titleWarn {
+  color: #222222;
+  font-weight: 600;
+}
+
+.centerSub {
+  max-width: 900px;
+  color: #787878;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.helperLine {
+  margin-top: 6px;
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.link {
+  color: #14c4ed;
+  text-decoration: underline;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+
+.dndImg {
+  width: 260px;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* bottom */
+.bottomBlock {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.bottomTitle {
+  text-align: center;
+  color: #222222;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.findBtn {
+  height: 46px;
+  padding: 0 56px;
+  background: #222222;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 56px;
+  border: 0;
+  cursor: pointer;
+
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+/* ---------------- COMMON STATUS BLOCK ---------------- */
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+
+/* top circle + icon */
+.statusTop {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusIcon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusIcon img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+/* file meta text (общий стиль для upload/success) */
+.statusFile {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28px;
+
+  max-width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statusSize {
+  margin-top: -6px;
+  color: #787878;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* big title under meta (общий стиль) */
+.statusTitle {
+  margin-top: 8px;
+  color: #787878;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* modifiers by state */
+.statusUploading .statusTitle {
+  color: #787878;
+}
+
+.statusSuccess .statusTitle {
+  color: #787878;
+}
+
+.statusFail .statusTitle {
+  color: #787878;
+}
+
+/* ---------------- RINGS ---------------- */
+.ring {
+  width: 240px;
+  height: 240px;
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.ringBg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 8;
+}
+
+.ringFg {
+  fill: none;
+  stroke: #14c4ed;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.15s linear;
+}
+
+.ringSuccess {
+  fill: none;
+  stroke: #34c759;
+  stroke-width: 8;
+}
+
+.ringFail {
+  fill: none;
+  stroke: #ffb400;
+  stroke-width: 8;
+}
+
+/* ---------------- FAIL OUTER + ACTIONS ---------------- */
+.failOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.failDesc {
+  max-width: 760px;
+  color: #222222;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.failActions {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.failBtnPrimary {
+  height: 40px;
+  padding: 0 22px;
+  background: #222222;
+  border-radius: 56px;
+  border: 0;
+  cursor: pointer;
+
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.failBtnSecondary {
+  height: 40px;
+  padding: 0 22px;
+  background: white;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+
+  color: #222222;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.failHint {
+  max-width: 900px;
+  margin-top: 10px;
+  color: #787878;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}

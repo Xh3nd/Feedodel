@@ -1,0 +1,239 @@
+.page {
+  width: 1920px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%), #f2f2f2;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.main {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding: 16px 32px 0;
+  height: 330px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 314px;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+.heroCard {
+  position: absolute;
+  right: 56px;
+  bottom: 8px;
+  width: 346px;
+  min-width: 135px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  outline: 1px #f5f5f5 solid;
+  outline-offset: -1px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.heroCardTextWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heroCardTitle {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.heroCardText {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.heroCardArrowBtn {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 56px;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.heroCardArrowIcon {
+  width: 45px;
+  height: 46px;
+  display: block;
+}
+
+.content {
+  padding: 52px 238px 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.headingBlock {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  margin: 0;
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+}
+
+.breadcrumbHomeIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 468px);
+  gap: 20px;
+  align-content: start;
+}
+
+.postCard {
+  width: 468px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cardImageStub {
+  width: 100%;
+  height: 210px;
+  background: #d9d9d9;
+  border-radius: 12px;
+}
+
+.cardHead {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cardTitle {
+  flex: 1 1 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardDate {
+  text-align: right;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.cardSummaryTitle {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.cardSummary {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.cardActions {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.readBtn {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: 1px solid #222222;
+  background: #222222;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.readBtn:hover {
+  background: #ffffff;
+  color: #222222;
+  border-color: #d9d9d9;
+}
+
+@media (max-width: 1600px) {
+  .page {
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
+}

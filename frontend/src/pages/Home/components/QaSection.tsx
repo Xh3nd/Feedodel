@@ -37,7 +37,7 @@ export function QaSection() {
           href="#"
           onClick={(e) => e.preventDefault()}
         >
-          Больше задваемых вопросов по ссылке
+          Больше задаваемых вопросов по ссылке
         </a>
       </div>
 

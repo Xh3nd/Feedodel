@@ -1,0 +1,682 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.h1 {
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.homeIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.sep,
+.crumb {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionTop {
+  padding: 0 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sectionTitle {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.sectionDesc {
+  margin-top: 6px;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.periodRow {
+  padding: 0 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.periodLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.periodTabs {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.tab {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.tabActive {
+  background: #222222;
+  color: #ffffff;
+}
+
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stepBtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.stepValue {
+  height: 34px;
+  min-width: 34px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0.5px solid #d9d9d9;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.planRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.planLabel {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.planBadge {
+  padding: 12px 32px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planBadgeText {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.plansRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.planCard {
+  width: 346px;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.planCardPro {
+  background: radial-gradient(
+      ellipse 141.42% 418.67% at 0% 0%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(99, 74, 245, 0.2) 100%
+    ),
+    #222222;
+  border: none;
+  box-shadow: 3px 5px 12px rgba(99, 74, 245, 0.3),
+    -5px -5px 12px rgba(20, 196, 237, 0.2);
+}
+
+.planHead {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.planHeadBetween {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.planName {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.planNamePro {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.planSub {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.planSubOrange {
+  color: #e56c33;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.planBadgeSmall {
+  color: #14c4ed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.planDesc {
+  color: #d9d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.orangePill {
+  padding: 10px 10px;
+  border-radius: 19px;
+  border: 1px solid #e56c33;
+  color: #e56c33;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+
+.hr {
+  height: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.hrPro {
+  border-top: 1px solid #d9d9d9;
+  opacity: 1;
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.priceLine {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.priceMain {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.priceOld {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+
+.priceSub {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.priceMainPro {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.priceSubPro {
+  color: #d9d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.btnGradient {
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+
+  background: radial-gradient(
+    ellipse 141.42% 896.16% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.btnBlack {
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+
+  background: #222222;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.featureLabel {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.featureValue {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.featureLabelPro {
+  color: #d9d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.featureValuePro {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.btnGhost {
+  height: 52px;
+  padding: 16px 56px;
+  background: #fff;
+  border-radius: 56px;
+  border: none;
+  outline: 1px solid #d9d9d9;
+  cursor: pointer;
+
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.checkCard {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.checkTitle {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.checkDesc {
+  padding-left: 47px;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* custom checkbox */
+.checkbox {
+  width: 27px;
+  height: 27px;
+  position: relative;
+  display: inline-flex;
+}
+
+.checkbox input {
+  opacity: 0;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.checkboxUi {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  display: block;
+}
+
+.checkbox input:checked + .checkboxUi {
+  background: #222222;
+  border-color: #222222;
+}
+
+.checkbox input:checked + .checkboxUi::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  width: 13px;
+  height: 7px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+/* FAQ */
+.faq {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.faqHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faqTitle {
+  width: 1054px;
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.faqSubtitle {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.faqLink {
+  color: #14c4ed;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 24px;
+}
+
+.faqList {
+  width: 834px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0 12px 0 24px;
+  overflow: hidden;
+}
+
+.faqItemOpen {
+  padding-bottom: 16px;
+}
+
+.faqQRow {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faqQ {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.faqBtn {
+  width: 44px;
+  height: 44px;
+}
+
+.faqA {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Request form */
+.request {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.requestText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.requestTitle {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.requestSub {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.emailField {
+  width: 834px;
+  height: 72px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+
+  color: #e6e6e6;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.requestBottom {
+  width: 834px;
+  padding: 0 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.consent {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.consentText {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.btnDisabled {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+
+  background: #222222;
+  opacity: 0.4;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: not-allowed;
+}
+
+.faqBtn {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+}
+
+.faqBtnIcon {
+  width: 44px;   /* если иконка уже отрисована под 44 */
+  height: 44px;
+  display: block;
+  object-fit: contain;
+}
+

@@ -1,0 +1,240 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.h1 {
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.homeIcon {
+  width: 16px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.sep,
+.crumb {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionTop {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTitle {
+  flex: 1;
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.btnGhost {
+  height: 52px;
+  padding: 16px 56px;
+  background: #fff;
+  border-radius: 56px;
+  border: none;
+  outline: 1px solid #d9d9d9;
+  cursor: pointer;
+
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cardCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rowCard {
+  padding: 24px;
+  background: #fff;
+  border-radius: 20px;
+  outline: 1px solid #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.rowLabel {
+  width: 200px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.valueBox {
+  flex: 1;
+  height: 36px;
+  padding: 4px 12px;
+  background: #f4f4f4;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.valueText {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.notifyCard {
+  padding: 0 12px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notifyTop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkbox {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.notifyTitle {
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.notifyDesc {
+  padding-left: 47px;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.deleteRow {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homeIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btnPrimary {
+  height: 52px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  background: #222222;
+}
+
+.fieldCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input {
+  width: 100%;
+  height: 36px;
+  padding: 4px 12px;
+
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  background: #f4f4f4;
+
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.input:focus {
+  outline: 1px solid #d9d9d9;
+}
+
+.inputError {
+  outline: 1px solid #ff3c3c !important;
+}
+
+.errorText {
+  color: #ff3c3c;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 4px;
+}
+
+.hintText {
+  color: #787878;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 4px;
+}

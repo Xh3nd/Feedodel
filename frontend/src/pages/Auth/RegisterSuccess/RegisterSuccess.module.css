@@ -1,0 +1,169 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.wrapper {
+  width: 1920px;
+  min-height: 1080px;
+  padding-left: 238px;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 468px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.textBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.title {
+  text-align: center;
+  color: #34c759;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+}
+
+.link {
+  color: #14c4ed;
+  text-decoration: underline;
+}
+
+.hint {
+  opacity: 0.6;
+  text-align: center;
+  color: #787878;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.right {
+  width: 950px;
+  height: 1080px;
+  background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%),
+    #f2f2f2, white;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.rules {
+  width: 100%;
+  flex: 1 1 0;
+  padding-left: 122px;
+  padding-right: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 72px;
+}
+
+.ruleMuted {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ruleTitleMuted {
+  opacity: 0.4;
+  color: #787878;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  text-decoration: line-through;
+  line-height: 32px;
+}
+
+.ruleTextMuted {
+  opacity: 0.4;
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  text-decoration: line-through;
+  line-height: 28px;
+}
+
+.rule {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ruleTitle {
+  color: #222222;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.ruleText {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.rightBottom {
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  padding-left: 122px;
+  padding-right: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.policy {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.policyLink {
+  color: #787878;
+  text-decoration: underline;
+}

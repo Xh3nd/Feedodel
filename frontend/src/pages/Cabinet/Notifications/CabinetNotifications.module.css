@@ -1,0 +1,146 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.h1 {
+  color: #222222;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.homeIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.sep,
+.crumb {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+}
+
+/* sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTop {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.sectionTitle {
+  flex: 1;
+  color: #787878;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* cards (как в макете — без белого блока, просто строки) */
+.card {
+  padding: 0 12px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.rowTitle {
+  color: #222222;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.rowDesc {
+  padding-left: 47px;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* checkbox (тот же стиль, что мы делали в subscription) */
+.checkbox {
+  width: 27px;
+  height: 27px;
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 27px;
+}
+
+.checkbox input {
+  opacity: 0;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.checkboxUi {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  display: block;
+}
+
+.checkbox input:checked + .checkboxUi {
+  background: #222222;
+  border-color: #222222;
+}
+
+.checkbox input:checked + .checkboxUi::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  width: 13px;
+  height: 7px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}

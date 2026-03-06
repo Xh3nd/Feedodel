@@ -1,8 +1,16 @@
 import styles from "./Register.module.css";
 import logo from "../../../assets/icons/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { setAuthenticated } from "../../../utils/Auth";
 
 export default function Register() {
+  const navigate = useNavigate();
+
+  const handleRegister = () => {
+    // заглушка "успешной регистрации"
+    setAuthenticated(true);
+    navigate("/register-success");
+  };
   return (
     <div className={styles.page}>
       <div className={styles.wrapper}>
@@ -68,7 +76,7 @@ export default function Register() {
             </div>
           </div>
 
-          <button className={styles.button} type="button">
+          <button className={styles.button} type="button" onClick={handleRegister}>
             Зарегистрироваться
           </button>
         </div>

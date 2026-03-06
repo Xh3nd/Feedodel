@@ -25,7 +25,7 @@
 .subtract {
   position: absolute;
   left: 50%;
-  top: -22px; /* подгони под макет */
+  top: -22px;
   transform: translateX(-50%);
 
   width: 1920px;
@@ -51,7 +51,6 @@
   height: 46px;
   padding: 16px;
 
-  /* как в макете: светлые капсулы */
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10.5px);
 
@@ -73,7 +72,7 @@
     color 0.2s ease;
 }
 
-/* Активная страница — тёмная (как в макете) */
+/* Активная страница */
 .navPillActive {
   background: rgba(34, 34, 34, 0.75);
   color: white;
@@ -84,7 +83,7 @@
   transform: translateY(-1px);
 }
 
-/* CENTER LOGO PILL */
+/* CENTER LOGO */
 .logoWrap {
   position: relative;
   z-index: 1;
@@ -111,7 +110,7 @@
   gap: 20px;
 }
 
-/* Buttons */
+/* ---------------- Buttons ---------------- */
 .headerBtn {
   height: 46px;
   padding: 16px;
@@ -133,7 +132,9 @@
   line-height: 24px;
   color: #222222;
 
-  text-decoration: none; /* для Link "Войти" */
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* иконки плюса */
@@ -146,7 +147,7 @@
   display: none;
 }
 
-/* Hover для кнопок (как у тебя было) */
+/* Hover для кнопок */
 .headerBtn:hover {
   background: radial-gradient(
     ellipse 100% 900% at 0% 0%,
@@ -161,7 +162,7 @@
   transform: translateY(-2px);
 }
 
-/* Меняем иконки местами */
+/* Меняем иконки плюса местами на hover */
 .headerBtn:hover .plusDark {
   display: none;
 }
@@ -172,6 +173,370 @@
 .headerBtn:active {
   transform: translateY(0);
   box-shadow: none;
+}
+
+/* ---------- Создать фид: вход выполнен ---------- */
+.createBtn {
+  background: radial-gradient(
+    ellipse 100% 900% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+  color: white;
+
+  box-shadow: -5px -5px 12px rgba(20, 196, 237, 0.2),
+    3px 5px 12px rgba(99, 74, 245, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* на createBtn всегда белый плюс */
+.createBtn .plusDark {
+  display: none;
+}
+.createBtn .plusLight {
+  display: block;
+}
+
+/* запретить общему hover менять createBtn */
+.createBtn:hover {
+  transform: translateY(-2px);
+  color: white;
+  background: radial-gradient(
+    ellipse 100% 900% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+  box-shadow: -7px -7px 16px rgba(20, 196, 237, 0.25),
+    5px 7px 16px rgba(99, 74, 245, 0.35);
+}
+.createBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* ---------- Создать фид (ГОСТЬ) ---------- */
+.createBtnGuest {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10.5px);
+  color: #222222;
+
+  box-shadow: none;
+}
+
+/* плюс тёмный */
+.createBtnGuest .plusDark {
+  display: block;
+}
+.createBtnGuest .plusLight {
+  display: none;
+}
+
+/* hover → градиент */
+.createBtnGuest:hover {
+  background: radial-gradient(
+    ellipse 100% 900% at 0% 0%,
+    #634af5 0%,
+    #14c4ed 100%
+  );
+  color: white;
+
+  box-shadow: -5px -5px 12px rgba(20, 196, 237, 0.2),
+    3px 5px 12px rgba(99, 74, 245, 0.3);
+
+  transform: translateY(-2px);
+}
+
+/* на hover меняем плюс */
+.createBtnGuest:hover .plusDark {
+  display: none;
+}
+.createBtnGuest:hover .plusLight {
+  display: block;
+}
+
+
+/* ---------------- User icons block ---------------- */
+.userBlock {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------------- Notification button ---------------- */
+.notificationBtn {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+
+  background: white;
+  border: 0;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* иконки лежат друг на друге */
+.notificationImg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* default: чёрная */
+.notificationImgBlack {
+  opacity: 1;
+}
+.notificationImgWhite {
+  opacity: 0;
+}
+
+/* hover */
+.notificationBtn:hover {
+  background-color: #222222;
+  transform: translateY(-2px);
+}
+
+.notificationBtnActive {
+  background-color: #222222;
+}
+
+.notificationBtn:hover .notificationImgBlack {
+  opacity: 0;
+}
+
+.notificationBtn:hover .notificationImgWhite {
+  opacity: 1;
+}
+
+.notificationBtnActive .notificationImgBlack {
+  opacity: 0;
+}
+
+.notificationBtnActive .notificationImgWhite {
+  opacity: 1;
+}
+
+/* ---------------- Profile button + swap icons ---------------- */
+.profileBtn {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* две иконки лежат друг на друге */
+.profileImg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* default: чёрная */
+.profileImgBlack {
+  opacity: 1;
+}
+.profileImgWhite {
+  opacity: 0;
+}
+
+/* hover: чёрный фон + белая иконка */
+.profileBtn:hover {
+  background-color: #222222;
+  transform: translateY(-2px);
+}
+
+.profileBtn:hover .profileImgBlack {
+  opacity: 0;
+}
+.profileBtn:hover .profileImgWhite {
+  opacity: 1;
+}
+
+/* ---------------- Dropdown menu ---------------- */
+.profileMenu {
+  position: absolute;
+  top: 56px;
+  right: 0;
+
+  width: 245px;
+  padding: 20px 12px;
+
+  background: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  z-index: 10;
+}
+
+.profileBtnOpen {
+  background-color: #222222;
+  transform: translateY(-2px);
+}
+
+/* swap иконок */
+.profileBtn:hover .profileImgBlack,
+.profileBtnOpen .profileImgBlack {
+  opacity: 0;
+}
+
+.profileBtn:hover .profileImgWhite,
+.profileBtnOpen .profileImgWhite {
+  opacity: 1;
+}
+
+.menuTop {
+  width: 228px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatarPill {
+  height: 46px;
+  padding: 16px 0;
+  background: #222222;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.avatarIcon {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatarIcon::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 19px;
+  height: 22px;
+  background: white;
+  border-radius: 2px;
+}
+
+.userText {
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.userName {
+  color: #222222;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.userEmail {
+  color: #787878;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.divider {
+  align-self: stretch;
+  height: 0px;
+  outline: 1px #d9d9d9 solid;
+  outline-offset: -0.5px;
+}
+
+.menuGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menuItem {
+  width: 100%;
+  height: 32px;
+  padding: 0 8px;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  border-radius: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.menuItem:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.itemIcon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemIcon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #d9d9d9;
+  border-radius: 4px;
+  display: block;
+}
+
+.itemText {
+  width: 150px;
+  color: #787878;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.badge {
+  padding: 2px 10px;
+  background: #d9d9d9;
+  border-radius: 6px;
+
+  color: #787878;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 /* media */
