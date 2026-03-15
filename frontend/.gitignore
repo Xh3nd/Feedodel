@@ -9,7 +9,6 @@ lerna-debug.log*
 
 # Dependencies & build
 node_modules
-dist
 dist-ssr
 .vite
 .cache
@@ -32,3 +31,4 @@ dist-ssr
 
 # Test coverage
 coverage
+
